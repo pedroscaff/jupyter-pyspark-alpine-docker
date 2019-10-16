@@ -5,7 +5,7 @@ RUN apk add --update wget
 RUN wget -q http://mirrors.ae-online.de/apache/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz
 RUN tar -xzf spark-2.3.2-bin-hadoop2.7.tgz
 RUN mv spark-2.3.2-bin-hadoop2.7 /opt/spark
-RUN ln -s /opt/spark-1.2.0 /opt/spark̀
+RUN ln -s /opt/spark-1.2.0 /opt/spark
 ENV SPARK_HOME=/opt/spark
 ENV PATH=$SPARK_HOME/bin:$PATH
 
